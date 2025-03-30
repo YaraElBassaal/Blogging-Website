@@ -1,0 +1,106 @@
+.blog-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    width: 420px; /* Adjusted width */
+    min-height: 500px; /* Ensures the height is at least 350px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content evenly */
+    padding: 1rem;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  /* Ensure the content inside expands */
+  .blog-card img {
+    width: 100%;
+    height: 180px; /* Adjust the height of the image */
+    object-fit: cover;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-card p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    flex-grow: 1; /* Ensures content stretches */
+  }
+  
+  .blog-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Pushes buttons to the bottom */
+  }
+
+  /* --- Buttons Wrapper (Keeps them in one line) --- */
+.action-btns {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 12px;
+    flex-direction: column;
+  }
+  
+  /* --- General Button Styling --- */
+  .action-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    text-align: center;
+  }
+  
+  /* --- Delete Button (#ff6b6b) --- */
+  .delete-btn {
+    background: #ff6b6b;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: #e85b5b;
+  }
+  
+  /* --- Edit Button (#4ea8de) --- */
+  .edit-btn {
+    background: #4ea8de;
+  }
+  
+  .edit-btn:hover {
+    background: #3b94c9;
+  }
+  
+  /* --- Link inside button (Ensures full button is clickable) --- */
+  .btn-link {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .blog-card {
+      width: 100%;
+      max-width: 360px;
+      min-height: auto; /* Let it adjust based on content */
+    }
+  }
+  

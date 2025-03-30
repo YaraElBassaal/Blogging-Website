@@ -1,0 +1,79 @@
+/* --- Centering the Form --- */
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* --- Heading with Underline --- */
+  .login-container h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0;
+  }
+  
+  .login-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+  }
+  
+  /* --- Error Message --- */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  /* --- Input Fields --- */
+  .login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    transition: 0.3s;
+  }
+  
+  /* --- Form Button --- */
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .login-container button:hover {
+    background: var(--primary-light);
+  }
+  
+  /* --- Responsive Design --- */
+  @media (max-width: 600px) {
+    .login-container {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .login-container h2 {
+      font-size: 1.6rem;
+    }
+  }
+  

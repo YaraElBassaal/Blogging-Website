@@ -1,0 +1,25 @@
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.blog-form input, .blog-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.blog-form button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.blog-form button:hover {
+  background: #ff9900;
+}
